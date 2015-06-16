@@ -1,5 +1,5 @@
 {
-	"reponame":"iotapp-template-lcd-driver",
+	"repoName":"iotapp-template-lcd-driver",
 	"title":"LCD with backlight driver and demonstrator",
 	"tooltip":"A node.js based app that can work with the UPM library or directly with the I2C bus",
 	"description":"A node.js based app that can work with the UPM library or directly with the I2C bus",
