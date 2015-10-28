@@ -1,11 +1,11 @@
 {
   "project": {
-    "projectSettingsVersion": "1.2",
+    "projectSettingsVersion": "2.0.0",
     "creationData": {
       "type": "Internet of Things Creator",
       "projectTypeName": "com.intel.xdk.projecttype.iotapp",
-      "projectGuid": "00000000-0000-0000-0000-000000000000",
-      "lastModifiedDate": 1430143828290,
+      "projectGuid": "cd9da749-dea2-4603-be88-45a0087e92b7",
+      "lastModifiedDate": 1445866070891,
       "creationDate": 1427895359036
     },
     "sourceDirectory": "",
@@ -15,6 +15,11 @@
     "projectDirectories": {},
     "libraries": [],
     "cordovaPlugins": [],
-    "serviceMethods": []
-    }
+    "serviceMethods": [],
+    "gameAssetDirectory": "asset",
+    "gameMetadata": {},
+    "testDirectory": "test",
+    "projectTags": [],
+    "buildConfigurations": {}
+  }
 }
