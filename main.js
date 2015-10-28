@@ -42,6 +42,7 @@ if (useUpmVersion) {
 // MQTT 
 //
 
+var org = "orgxxx";                     // <--- update!!
 var org = "80t9vx";                     // <--- update!!
 var type = "Edison";                  // <--- update!!
 var id = "784b87a8d14f";                // <--- update!!
