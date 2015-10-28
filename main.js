@@ -42,10 +42,10 @@ if (useUpmVersion) {
 // MQTT 
 //
 
-var org = "80t9vx";                     // <--- update!!
-var type = "Edison";                  // <--- update!!
-var id = "784b87a8d14f";                // <--- update!!
-var auth_token = "T7TtuOcfW*NtCradDK";  // <--- update!!
+var org = "orgxxx";                     // <--- update!!
+var type = "typex";                  // <--- update!!
+var id = "idxxxxxxxxxx";                // <--- update!!
+var auth_token = "tokenxxxxxxxxxxxxx";  // <--- update!!
 
 var authmethod = 'use-token-auth';      // You don't need update this parm
 
