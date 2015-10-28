@@ -33,14 +33,14 @@
         "name": "LCD.xdk"
       },
       "LCD.xdke": {
-        "previousModTime": 1445995381891,
-        "modified": 1445995381891,
+        "previousModTime": 1445996104053,
+        "modified": 1445996104053,
         "seen": true,
         "name": "LCD.xdke"
       },
       "main.js": {
-        "previousModTime": 1445995709720,
-        "modified": 1445995709720,
+        "previousModTime": 1445996876099,
+        "modified": 1445996876099,
         "seen": true,
         "name": "main.js"
       },
@@ -65,25 +65,25 @@
     },
     "boardFileStatus": {
       "app.json": {
-        "previousModTime": 1445995742378
+        "previousModTime": 1445996904913
       },
       "icon.png": {
-        "previousModTime": 1445995742378
+        "previousModTime": 1445996904913
       },
       "lcd.js": {
-        "previousModTime": 1445995742378
+        "previousModTime": 1445996904913
       },
       "main.js": {
-        "previousModTime": 1445995742378
+        "previousModTime": 1445996904913
       },
       "package.json": {
-        "previousModTime": 1445995742378
+        "previousModTime": 1445996904913
       },
       "README.md": {
-        "previousModTime": 1445995742378
+        "previousModTime": 1445996904913
       },
       "xdk/project-info.json": {
-        "previousModTime": 1445995742378
+        "previousModTime": 1445996904913
       }
     }
   }

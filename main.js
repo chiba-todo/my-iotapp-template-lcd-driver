@@ -81,42 +81,40 @@ client.on('connect', function () {
     
 
 //subscribe to a topic
-    client.subscribe(sub_topic, function() {
-        // when a message arrives, do something with it
-        client.on('message', function(topic, message, packet) {
-            sub_message = message;   //JSON形式
+  client.subscribe(sub_topic, function() {
+  // when a message arrives, do something with it
+    client.on('message', function(topic, message, packet) {
+      sub_message = message;   //JSON形式
 console.log("Received '" + sub_message + "' on '" + topic + "'");
 console.log(JSON.parse(sub_message).Message);
-          
 
-          if(JSON.parse(sub_message).Message){
-                var disp_msg_sc = JSON.parse(sub_message).Message;    //JSON形式から必要な文字列を取り出して表示
+
+      if(JSON.parse(sub_message).Message){
+        var disp_msg_sc = JSON.parse(sub_message).Message;    //JSON形式から必要な文字列を取り出して表示
     //            display.clear();
-                var i = 0;
-            // スクロール：【問題点】スクロールが終わる前に次の文字が来ると重ねてスクロールが始まる
-                var lcdScroll = setInterval(function() {
-                    display.setCursor(0,0);
-    //                    display.write(''+disp_msg + '                ');
-            //            display.setCursor(0,0);
-    console.log(''+disp_msg_sc.substr(i) + '                ');
-                        display.write(''+disp_msg_sc.substr(i) + '                ');
-                    if (i < disp_msg_sc.length){
-                      i += 1;
-                    }else{
-                      i = 0;
-                      clearInterval(lcdScroll);
-                    }
-                },400);
-                }
-            }
+        var i = 0;
+    // スクロール：【問題点】スクロールが終わる前に次の文字が来ると重ねてスクロールが始まる
+        var lcdScroll = setInterval(function() {
+          display.setCursor(0,0);
+console.log(''+disp_msg_sc.substr(i) + '                ');
+          display.write(''+disp_msg_sc.substr(i) + '                ');
+          if (i < disp_msg_sc.length){
+            i += 1;
+          }else{
+            i = 0;
+            clearInterval(lcdScroll);
+          }
+        },400);
+      }
+
 // メッセージが「on」なら 13番のオンボードLEDを点灯
-            if (JSON.parse(sub_message).LED === "on") {  // when parameter LED is "on", LED is blinked.
+    if (JSON.parse(sub_message).LED === "on") {  // when parameter LED is "on", LED is blinked.
                 myOnboardLed.write(1);
             } else {
                 myOnboardLed.write(0);
             }
-        });
     });
+  });
 });
 
 
